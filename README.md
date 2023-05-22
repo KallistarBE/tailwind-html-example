@@ -1,7 +1,5 @@
 # tailwind-html-example
 
-`npm install -D tailwindcss`
-`npx tailwindcss init`
+## how to use
 
-
-`npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`
+in the terminal run `npm run dev`
