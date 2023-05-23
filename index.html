@@ -5,15 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/tailwind.css" rel="stylesheet" />
   </head>
-  <body class="bg-white px-4">
-    <h1 class="mt-8 text-3xl font-bold text-blue-500 underline">
-      Hello world!
-    </h1>
-    <h2 class="mt-4 bg-blue-900 pl-4 text-2xl text-white">Kallistar</h2>
-    <p class="font-serif">
-      This is the story...
-      <a href="/about.html">about</a>
-    </p>
-    <footer class="mt-4 bg-red-300">ok</footer>
+  <body class="bg-white px-4 dark:bg-black dark:text-white">
+    <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+      <!-- #region card -->
+      <div class="shrink-0 border border-stone-300 p-4">
+        <h1 class="mt-4 text-3xl font-bold text-pink-800 underline">Card 1</h1>
+        <h2 class="mt-4 bg-blue-900 pl-4 text-2xl text-white">Kallistar</h2>
+        <p>efafe fa esf asefa</p>
+        <p class="font-serif">
+          This is the story...
+          <a href="/about.html">about</a>
+        </p>
+        <button class="button-blue">button 1</button>
+        <footer class="mt-4 bg-red-300">ok</footer>
+      </div>
+      <!-- #endregion of card -->
+      <!-- #region card2 -->
+      <div class="shrink-0 border border-stone-300 p-4">
+        <h1 class="mt-8 text-3xl font-bold text-pink-800 underline">Card 2</h1>
+        <h2 class="mt-4 bg-blue-900 pl-4 text-2xl text-white">Kallistar</h2>
+        <p>efafe fa esf asefa</p>
+        <p class="font-serif">
+          This is the story...
+          <a href="/about.html">about</a>
+        </p>
+        <button class="button-blue">
+          button 2
+          <span
+            class="inline-block h-2 w-2 animate-ping rounded-full bg-white"
+          ></span>
+        </button>
+        <footer class="mt-4 bg-red-300">ok</footer>
+      </div>
+      <!-- #endregion of card -->
+    </div>
   </body>
 </html>

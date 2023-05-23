@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .button-blue {
+    @apply rounded border border-blue-500 bg-orange-800 px-2 py-1 text-white shadow;
+  }
+}
