@@ -5,39 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/tailwind.css" rel="stylesheet" />
   </head>
+
   <body class="bg-white px-4 dark:bg-black dark:text-white">
-    <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
-      <!-- #region card -->
-      <div class="shrink-0 border border-stone-300 p-4">
-        <h1 class="mt-4 text-3xl font-bold text-pink-800 underline">Card 1</h1>
-        <h2 class="mt-4 bg-blue-900 pl-4 text-2xl text-white">Kallistar</h2>
-        <p>efafe fa esf asefa</p>
-        <p class="font-serif">
-          This is the story...
-          <a href="/about.html">about</a>
-        </p>
-        <button class="button-blue">button 1</button>
-        <footer class="mt-4 bg-red-300">ok</footer>
+    <!-- section header -->
+    <div class="bg-white">
+      <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Kallistar</span>
+              <img class="h-8 w-auto" src="/kallistar-logo.svg" alt="">
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Open main menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a href="#playground" class="text-sm font-semibold leading-6 text-gray-900">Setting Up Playground</a>
+            <a href="#html" class="text-sm font-semibold leading-6 text-gray-900">HTML & CSS Code</a>
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true">
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div class="fixed inset-0 z-50"></div>
+          <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Kallistar</span>
+                <img class="h-8 w-auto" src="/kallistar-logo.svg" alt="">
+              </a>
+              <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <a href="#playground" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Setting Up Playground</a>
+                  <a href="#html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">HTML & CSS Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    
+      <div class="relative isolate px-6 pt-14 lg:px-8">
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+          <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#D1AC4A] to-[#E1CC6C] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        </div>
+        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div class="text-center">
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Tailwind UI Library Functionalitiet</h1>
+            <p class="mt-6 text-lg leading-8 text-gray-600">Met dit document wil ik meer inzicht geven in de werking van de Tailwind UI Library functionaliteit en hoe u op een eenvoudige manier de inhoud en layout kunt wijzigen.</p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a href="#" class="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+          <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#E1CC6C] to-[#D1AC4A] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        </div>
       </div>
-      <!-- #endregion of card -->
-      <!-- #region card2 -->
-      <div class="shrink-0 border border-stone-300 p-4">
-        <h1 class="mt-8 text-3xl font-bold text-pink-800 underline">Card 2</h1>
-        <h2 class="mt-4 bg-blue-900 pl-4 text-2xl text-white">Kallistar</h2>
-        <p>efafe fa esf asefa</p>
-        <p class="font-serif">
-          This is the story...
-          <a href="/about.html">about</a>
-        </p>
-        <button class="button-blue">
-          button 2
-          <span
-            class="inline-block h-2 w-2 animate-ping rounded-full bg-white"
-          ></span>
-        </button>
-        <footer class="mt-4 bg-red-300">ok</footer>
+    </div>
+     <!-- End of section header -->
+    <div class="overflow-hidden bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div class="lg:ml-auto lg:pl-4 lg:pt-4">
+            <div class="lg:max-w-lg">
+              <h2 class="text-base font-semibold leading-7 text-blue-900">Tailwind Playground</h2>
+              <p id="playground" class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Setting up Playground</p>
+              <p class="mt-6 text-lg leading-8 text-gray-600">Om te playground te kunnen zien en er effectief mee te werken zal je enkele stappen moeten volgen om deze te openen:</p>
+              <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-gray-900">
+                    <svg class="absolute left-1 top-1 h-5 w-5 text-blue-900" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+                    </svg>                    
+                    Open Github Codespace
+                  </dt>
+                  <dd class="inline">In de Kallistar Github pagina zal je een repository zien met de naam "tailwind-html-example". Als je op de repo klikt, zal je in de rechterbovenhoek een groene knop zien met de naam "Code" </dd>
+                </div>
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-gray-900">
+                    <svg class="absolute left-1 top-1 h-5 w-5 text-blue-900" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+                    </svg>                    
+                    Click Codespaces
+                  </dt>
+                  <dd class="inline">Wanneer je op de groene knop klikt, zal je twee tabs zien. De tweede tab heeft de naam "Codespace". Als je op deze tab klikt zou je normaal gezien de repo in de Codespace Terminal kunnen openen.</dd>
+                </div>
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-gray-900">
+                    <svg class="absolute left-1 top-1 h-5 w-5 text-blue-900" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                    </svg>                    
+                    Run the Code
+                  </dt>
+                  <dd class="inline">Je kan de pagina openen door in de Terminal "npm run dev" te typen, wat op zijn beurt een link zal tonen. Open deze link.  In de HTML file kan je alle sourcecode vinden voor deze pagina.</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <div class="flex items-start justify-end lg:order-first">
+            <img src="/playground.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" width="2432" height="1442">
+          </div>
+        </div>
       </div>
-      <!-- #endregion of card -->
+    </div>
+    <div class="bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+          <p class="text-base font-semibold leading-7 text-blue-900">Index File</p>
+          <h1 id="html" class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">HTML & CSS Code</h1>
+          <div class="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-700 lg:max-w-none lg:grid-cols-2">
+            <div>
+              <p>Een van de gemakkelijkheden bij het gebruik van Tailwind is dat de CSS is in de HTML code. Als je componenten gebruikt kan je deze in een aparte library stoppen en ophalen. Dan kan je de componenten aanpassen op globaal vlak of lokaal in de html code. Bovendien heeft Tailwind uitgebreide documentatie dat stap voor stap uitlegt hoe alles werkt, documentatie rond alle classes, en zoveel meer.</p>
+              <p class="mt-8">Ik zou op zijn beurt, met behulp van Tailwind, een geperzonaliseerde library maken dei aansluit bij jou bedrijfsidentiteit. Op deze manier zal je alle middelen hebben om eenvoudig aanpassingen te kunnen maken.</p>
+            </div>
+            <div>
+              <p>Het doel ban deze library is om alles vlotter te laten verlopen en vlotter aanpassingen te kunnen maken door de inginieurs, zonder tussenkomst van een externa partij.</p>
+              <p class="mt-8">Heb je nog vragen in verband met de library, het toepassen, of andere vragen, geef me gerust een seintje. Voel je vrij om de playgound uit te testen en om je wat vertrouwder te maken met de werking.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative overflow-hidden pt-16 lg:pt-20">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <img class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10" src="/library.png" alt="">
+          <div class="relative" aria-hidden="true">
+            <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </body>
 </html>
